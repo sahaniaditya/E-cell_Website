@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>E-Cell IIT Jodhpur</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/final_logo.png' %}" rel="icon">
+  <link href="{% static 'img/final_logo.png' %}" rel="apple-touch-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+    integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+    crossorigin="anonymous"></script>
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1><a href="/home" class="logo"><img src="{% static 'img/logo.png' %}"></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="/home#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="/home#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="/home#why-us">Structure</a></li>
+          <!-- <li><a class="nav-link scrollto" href="/home">Events</a></li> -->
+          <li><a class="nav-link scrollto" href="/home#gallery">Gallery</a></li>
+          <!--<li><a class="nav-link scrollto" href="/home#menu">Sponsors</a></li> -->
+          <li><a class="nav-link scrollto" href="/home#contact">Feedback</a></li>
+          <li><a class="nav-link scrollto" href="/speakers">Past Speakers</a></li>
+
+          <li><a class="nav-link scrollto" href="/team">Team</a></li>
+          <li><a class="nav-link scrollto" href="http://www.tisc.iitj.ac.in/" target="_blank">TISC IITJ</a></li>
+
+          <!-- <li><a class="nav-link scrollto" href="">Blogs</a></li>  -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <div class="popup" onclick="popupFunction()">
+        <a id="login" href="#" class="book-a-table-btn scrollto d-none d-lg-flex">Login</a>
+        <span class="popuptext" id="myPopup">not functional yet :)</span>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="background-image"></div>
+  <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1>Entrepreneurship Cell</h1>
+        <h1><span>IIT Jodhpur</span></h1>
+        <h2 class="text"></h2>
+      </div>
+
+      <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in"
+        data-aos-delay="200">
+        <a href="https://www.youtube.com/watch?v=4U-Z0ebB0NI" class="glightbox play-btn"></a>
+      </div>
+
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+          <div class="about-img">
+            <div class="Sphere">
+              <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+              <script>
+                const Texts = [
+                  'Capital', 'Resources', 'Funding',
+                  'Incubation', 'Venture Capital', 'Finance',
+                  'Economics', 'Innovate',
+                  'Invest', 'Ideate', 'Marketing',
+                  'Business', 'StartUp', 'Create', 'Sponsor', 'Entrepreneurship'
+                ];
+
+                var tagCloud = TagCloud('.Sphere', Texts, {
+                  radius: 230,
+                  maxSpeed: 'normal',
+                  initSpeed: 'fast',
+                  direction: 135,
+                  keep: true
+
+                });
+                var color = '#cda45e';
+                document.querySelector('.Sphere').style.color = color;
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3>About Us</h3>
+          <p class="fst-italic">
+            Entrepreneurship-Cell IIT Jodhpur is a student body that focuses on developing and promoting entrepreneurial
+            eco-system and start-up skills in creative and potential minds.
+          </p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i>Focuses on various dimensions of the corporate world that revolves
+              around an entrepreneur.</li>
+            <li><i class="bi bi-check-circle"></i>Educate people about different aspects of a business</li>
+            <li><i class="bi bi-check-circle"></i>Guide and promote entrepreneurial ideas and provide resources to help
+              them establish, nurture and run their own startup.
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- ======= Structure Section ======= -->
+  <section id="why-us" class="why-us">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Structure</h2>
+        <p>Verticals of E-Cell</p>
+      </div>
+
+      <div class="row">
+
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box" data-aos="zoom-in" data-aos-delay="200" style="height: 550px;">
+            <span>Funding Advisory and Incubation</span>
+            <p>Our task is To look over the activities related to the incubation center
+              of IIT Jodhpur.We help the students in funding their
+              startups and in the implementation of their innovative ideas with the help of an incubation
+              center.
+              We connect aspiring startups with the Incubation Center of IIT Jodhpur so that they get proper
+              mentorship.
+              We Organize various pitching events in collaboration with the Incubation
+              Center and Investors so that startups who have developed their models could present their ideas.
+              We Help students with funding-related activities for their startups by using
+              the collaborations of E-cell with Institute Incubator and Investors.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box" data-aos="zoom-in" data-aos-delay="200" style="height: 550px;">
+            <span>Institute Innovation Council</span>
+            <p>Our task is to establish a thriving regional innovation sector, enhancing
+              ones cognitive abilities
+              Create a working environment for identifying ideas and concept pre-incubation, Prepare the institution for
+              the Atal Institutional Ranking.
+              To Divide events throughout the year uniformly.so that events fall according to the IIC calendar.
+              Establish connections with peers and national entrepreneurship organisations.
+              Find and reward innovations and share their success stories.
+              Create an institution's innovation portal to highlight innovative projects carried out by the institutions
+              faculty and
+              students.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box" data-aos="zoom-in" data-aos-delay="300" style="height: 550px;">
+            <span>Media and Publicity</span>
+            <p>Team MnP takes charge of informing the mass about Ecell and its activities. Basically, we do the
+              promotion of E-Cell
+              both inside and beyond the IITJ campus using all available media outlets. This team will be in charge of
+              producing
+              excellent native content, audiovisuals, etc. Publicity is crucial because it raises knowledge of and
+              visibility of our
+              cell and conveys the idea that spending time here is valuable. We strive to increase participation, carry
+              out all social
+              media activities, and provide high-quality information about entrepreneurship such as articles,
+              interviews, games, and
+              announcements about the E-cell activities.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box" data-aos="zoom-in" data-aos-delay="200" style="height: 450px;">
+            <span>Web Development</span>
+            <p>We represent online presence of E-Cell IIT Jodhpur on the Internet. Our task
+              is to design, develop and maintain E-Cell's Website. We ensure latest updates of the club are reflected
+              upon the
+              website. After all, the website you're currently viewing is our creation !
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box" data-aos="zoom-in" data-aos-delay="200" style="height: 450px;">
+            <span>Events and Competitions</span>
+            <p>The Events and Competitions Pillar of E-Cell makes sure that events, workshops, and seminars are
+              successfully organised
+              and conducted to help IIT Jodhpur students develop entrepreneurship-related skills. It also makes sure
+              that IITJ
+              students actively participate in various startup-related events across the nation and the world. These
+              activities are
+              aimed at educating and enlightening interested students.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box" data-aos="zoom-in" data-aos-delay="100" style="height: 450px;">
+            <span>Corporate Relations, Start Up and Marketing</span>
+            <p>We serve as the front face E-Cell IIT Jodhpur and are responsible for maintaining healthy relationship
+              with counterparts of E-cell in different colleges, various companies and start-ups.
+              Ensure the availability of mentorship and investment for our college start-ups, sponsorship for events
+              conducted
+              by
+              our E-Cell.
+              Open to collaboration with companies, start-ups and E-cells.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Why Us Section -->
+
+
+  <!-- ======= Gallery Section ======= -->
+  <section id="gallery" class="gallery">
+
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Gallery</h2>
+        <p>Some Memories From Our Events</p>
+      </div>
+    </div>
+
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row g-0">
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static 'img/gallery/9.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+              <img src="{% static 'img/gallery/9.jpg' %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static 'img/gallery/8.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+              <img src="{% static 'img/gallery/8.jpg' %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static 'img/gallery/4.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+              <img src="{% static 'img/gallery/4.jpg' %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static 'img/gallery/6.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+              <img src="{% static 'img/gallery/6.jpg' %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static 'img/gallery/1.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+              <img src="{% static 'img/gallery/1.jpg' %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static 'img/gallery/10.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+              <img src="{% static 'img/gallery/10.jpg' %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static 'img/gallery/2.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+              <img src="{% static 'img/gallery/2.jpg' %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static 'img/gallery/7.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+              <img src="{% static 'img/gallery/7.jpg' %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Gallery Section -->
+
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div>
+    </div>
+
+    <div data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-3">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>NH 62, Surpura Bypass Rd, Karwar, Rajasthan 342030</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Friday:<br>
+                  10:00 AM - 6:00 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>ecell@iitj.ac.in</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Feedback" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="popup" onclick="popupFunction2()">
+                <div class="text-center"><button type="submit">Submit</button></div>
+                <span class="popuptext" id="myPopup2">not functional yet :)</span>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-info">
+            <a href="/home" class="logo"><img height="180px" src="{% static 'img/logo.png' %}"></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-info">
+            <p>
+              NH 62, Surpura Bypass Rd, <br>
+              Karwar, Rajasthan 342030<br><br>
+              <strong>Email:</strong> ecell@iitj.ac.in<br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="https://www.instagram.com/ecell_iitj/" class="instagram" target="_blank"><i
+                  class="bx bxl-instagram"></i></a>
+              <a href="https://twitter.com/ecell_iitj" class="twitter" target="_blank"><i
+                  class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/iitjecell/" class="facebook" target="_blank"><i
+                  class="bx bxl-facebook"></i></a>
+              <a href="https://www.youtube.com/@e-celliitj3491" class="youtube" target="_blank"><i
+                  class="bx bxl-youtube"></i></a>
+              <a href="https://www.linkedin.com/company/entrepreneurship-cell-iit-jodhpur" class="linkedin"
+                target="_blank"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1">
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>From E-CELL</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="/team">Team</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="/speakers">Past Speakers</a></li>
+            <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Blogs</a></li> -->
+            <!-- <li><i class="bx bx-chevron-right"></i> <a href="/home#events">Events</a></li> -->
+            <li><i class="bx bx-chevron-right"></i> <a href="/home#contact">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="http://www.tisc.iitj.ac.in/">TISC</a>
+            </li>
+            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                href="https://mic.gov.in/innovation-council/iic">IIC</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://www.iitj.ac.in/">IIT Jodhpur</a>
+            </li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">E-Conclave</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>ECELL IITJ</span></strong>. All Rights Reserved
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'vendor/aos/aos.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+
+<script>
+  var running = false;
+  function popupFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    function timeOut() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+      running = false;
+    }
+    if (running == false) {
+      setTimeout(timeOut, 4000);
+      running = true;
+    }
+  }
+</script>
+</body>
+
+</html>
